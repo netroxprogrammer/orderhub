@@ -8,12 +8,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>OrderHub </title>
+  <title>Order Hub </title>
 
   <!-- Bootstrap core CSS -->
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="dist/css/bootstrap-select.css">
 
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="dist/js/bootstrap-select.js"></script>
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
   <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
@@ -50,250 +56,63 @@
         <div class="left_col scroll-view">
 
           <div class="navbar nav_title" style="border: 0;">
-            <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>OrderHub!</span></a>
+            <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>OrderHub</span></a>
           </div>
           <div class="clearfix"></div>
 
           <!-- menu prile quick info -->
-        
+         
           <!-- /menu prile quick info -->
 
           <br />
 
           <!-- sidebar menu -->
           <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
-            <div>
-             <small> Welcome</small><h3> John </h3>
-              </div>
+
             <div class="menu_section">
-              <h3><br>DashBoard</h3>
+              <h3>Status Filter</h3>
               <ul class="nav side-menu">
-                <hr>
-                <h3>SELL</h3>
-                <li><a><i class="fa fa-home"></i> Orders <span class="fa fa-chevron-down"></span></a>
+                  <li><a href="orders.html">All Orders &nbsp;&nbsp;&nbsp;&nbsp; <i class="badge bg-green">21</i></a>
+                    </li>
+                
+                 <li><a href="awaitingpayment.html">Awaiting Payment&nbsp;&nbsp;&nbsp;&nbsp;<i class="badge bg-blue">1</i></a>
+                    </li>
+                  <li><a href="newOrders.html">New Orders&nbsp;&nbsp;&nbsp;&nbsp;<i class="badge bg-orange">1</i></a>
+                    </li>
+                  <li><a href="Processing.html">Processing&nbsp;&nbsp;&nbsp;&nbsp;<i class="badge bg-yellow">1</i></a>
+                    </li>
+                  <li><a href="Dispatched.html">Dispatched&nbsp;&nbsp;&nbsp;&nbsp;<i class="badge bg-white">1</i></a>
+                    </li>
+                      <li><a href="Cancelled.html">Cancelled&nbsp;&nbsp;&nbsp;&nbsp;<i class="badge bg-red">1</i></a>
+                    </li>
+                <li><a><i class="fa fa-building">
+                </i> Saved Filters
+                 <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu" style="display: none">
+                    <li><a href="#">No Saved filters</a>
+                    </li>
                    
-                   <li><a href="orders.html">orders</a></li>
-                   <li><a href="invoice.html">Invoice</a></li>
-                    <li><a href="craditShip.html">Credit Slips</a></li>
-                    <li><a href="DeliveryShip.html">Delivery Slip</a></li>
-                  
-                </ul>
-
-                <li>
-                <li><a><i class="fa fa-edit"></i> Catalog <span class="fa fa-chevron-down"></span></a>
-                  <ul class="nav child_menu" style="display: none">
-                    <li><a href="#" class="disabled">Products</a>
-                    </li>
-                    <li><a href="#">Categories</a>
-                    </li>
-                    <li><a href="#">Monitoring</a>
-                    </li>
-                    <li><a href="#">Attributes & Features</a>
-                    </li>
-                    <li><a href="#">Brand & Suppliers</a>
-                    </li>
-                    <li><a href="#">Files</a>
-                    </li>
-                    <li><a href="#">Discounts</a>
-                    </li>
-                     </ul>
-                </li>
-                <li><a><i class="fa fa-desktop"></i> Customers <span class="fa fa-chevron-down"></span></a>
-                  <ul class="nav child_menu" style="display: none">
-                    <li><a href="#">Customers</a>
-                    </li>
-                    <li><a href="#">Addresses</a>
-                    </li>
                   </ul>
                 </li>
-                <li><a><i class="fa fa-table"></i> Customers Service <span class="fa fa-chevron-down"></span></a>
+                <li><a><i class="fa fa-building">
+                </i> Batches
+                 <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu" style="display: none">
-                    <li><a href="#">Customer Service</a>
+                    <li><a href="#">No active batches</a>
                     </li>
-                      <li><a href="#">Order Messages</a>
-                    </li>
-                     <li><a href="#">Merchandise Returns</a>
-                    </li>
+                   
                   </ul>
                 </li>
-                <li><a><i class="fa fa-bar-chart-o"></i> Stats <span class="fa fa-chevron-down"></span></a>
-                  <ul class="nav child_menu" style="display: none">
-                    <li><a href="#">Stats</a>
-                    </li>
-                  </ul>
-                </li>
-                <h3>IMPROVE</h3>
-                <li><a><i class="fa fa-bar-chart-o"></i> Modules <span class="fa fa-chevron-down"></span></a>
-                  <ul class="nav child_menu" style="display: none">
-                    <li><a href="#">Modules & Services</a>
-                    </li>
-                    <li><a href="#">Modules Catalog </a>
-                    </li>
-                  </ul>
-                </li>
-                <li><a><i class="fa fa-bar-chart-o"></i> Design <span class="fa fa-chevron-down"></span></a>
-                  <ul class="nav child_menu" style="display: none">
-                    <li><a href="#">Theme & Logo</a>
-                    </li>
-                    <li><a href="#">Theme Catalog</a>
-                    </li>
-                    <li><a href="#">Pages</a>
-                    </li>
-                    <li><a href="#">Position</a>
-                    </li>
-                    <li><a href="#">Image Setting</a>
-                    </li>
-                    <li><a href="#">Link Widget</a>
-                    </li>
-                  </ul>
-                </li>
-                <li><a><i class="fa fa-bar-chart-o"></i> Shipping <span class="fa fa-chevron-down"></span></a>
-                  <ul class="nav child_menu" style="display: none">
-                    <li><a href="#">Carriers</a>
-                    </li>
-                    <li><a href="#">Preferences</a>
-                    </li>
-                  </ul>
-                </li>
-                  <li><a><i class="fa fa-bar-chart-o"></i> Payment <span class="fa fa-chevron-down"></span></a>
-                  <ul class="nav child_menu" style="display: none">
-                    <li><a href="#">Peyment Methods</a>
-                    </li>
-                    <li><a href="#">Prefernces </a>
-                    </li>
-                  </ul>
-                </li>
-                <li><a><i class="fa fa-bar-chart-o"></i>Localization<span class="fa fa-chevron-down"></span></a>
-                  <ul class="nav child_menu" style="display: none">
-                    <li><a href="#">Location</a>
-                    </li>
-                    <li><a href="#">Taxes</a>
-                    </li>
-                     <li><a href="#">Taxes</a>
-                    </li>
-
-                     <li><a href="#">Translations</a>
-                    </li>
-
-                  </ul>
-                </li>
-                <h3>CONFIGURE</h3>
-                <li><a><i class="fa fa-bar-chart-o"></i>Shop Parameters <span class="fa fa-chevron-down"></span></a>
-                  <ul class="nav child_menu" style="display: none">
-                    <li><a href="#">GeneraL</a>
-                    </li>
-                    <li><a href="#">Order Setting</a>
-                    </li>
-                     <li><a href="#">Product Setting</a>
-                    </li>
-
-                     <li><a href="#">Customer Setting</a>
-                    </li>
-
-                     <li><a href="#">Contact</a>
-                    </li>
-
-                     <li><a href="#">Traffic</a>
-                    </li>
-
-                     <li><a href="#">Search</a>
-                    </li>
-                  </ul>
-                </li>
-                <li><a><i class="fa fa-bar-chart-o"></i>Advanced Parameters<span class="fa fa-chevron-down"></span></a>
-                  <ul class="nav child_menu" style="display: none">
-                    <li><a href="#">Information</a>
-                    </li>
-                    <li><a href="#">Prformance</a>
-                    </li>
-                     <li><a href="#">Administration</a>
-                    </li>
-
-                     <li><a href="#">E-mail</a>
-                    </li>
-
-                     <li><a href="#">Import</a>
-                    </li>
-
-                     <li><a href="#">Traffic</a>
-                    </li>
-
-                     <li><a href="#">Team</a>
-                    </li>
-
-                     <li><a href="#">Database</a>
-                    </li>
-
-                     <li><a href="#">Logs</a>
-                    </li>
-
-                     <li><a href="#">Webservice</a>
-                    </li>
-                  </ul>
-                </li>
-                <h3>Managment</h3>
-                <!-- Channel Managment -->
-<li><a><i class="fa fa-bar-chart-o"></i>Channel Managment<span class="fa fa-chevron-down"></span></a>
-                  <ul class="nav child_menu" style="display: none">
-                    <li><a href="#">Sales Channels</a>
-                    </li>
-                    <li><a href="#">Shipping Channels</a>
-                    </li>
-                  </ul>
-                </li>
-                <!--  Invoice Managment -->
-                <li><a><i class="fa fa-bar-chart-o"></i>Invoice Managment<span class="fa fa-chevron-down"></span></a>
-                  <ul class="nav child_menu" style="display: none">
-                    <li><a href="#">Invoice Mapping</a>
-                    </li>
-                    <li><a href="#">Invoice Designer</a>
-                    </li>
-                  </ul>
-                </li>
-                <!--  Shipping Managment-->
-
-<li><a><i class="fa fa-bar-chart-o"></i>Shipping Managment<span class="fa fa-chevron-down"></span></a>
-                  <ul class="nav child_menu" style="display: none">
-                    <li><a href="#">Shipping Aliases</a>
-                    </li>
-                  </ul>
-                </li>
-                <!--  Order Managment-->
-                <li><a><i class="fa fa-bar-chart-o"></i>Orders Managment<span class="fa fa-chevron-down"></span></a>
-                  <ul class="nav child_menu" style="display: none">
-                    <li><a href="#">Orders</a>
-                    </li>
-                    <li><a href="#">Pick List</a>
-                    </li>
-                  </ul>
-                </li>
-            <!--  Product Managment -->
-
-<li><a><i class="fa fa-bar-chart-o"></i>Product Managment<span class="fa fa-chevron-down"></span></a>
-                  <ul class="nav child_menu" style="display: none">
-                    <li><a href="#">Stock</a>
-                    </li>
-                    
-                  </ul>
-                </li>
-                <!-- Advance -->
-                <li><a><i class="fa fa-bar-chart-o"></i>Advance<span class="fa fa-chevron-down"></span></a>
-                  <ul class="nav child_menu" style="display: none">
-                    <li><a href="#">API'S</a>
-                    </li>
-                    <li><a href="#">Export Data</a>
-                    </li>
-                  </ul>
-                </li>
-                </ul>
+                
+              </ul>
             </div>
+            
           </div>
-
           <!-- /sidebar menu -->
 
           <!-- /menu footer buttons -->
-        
+          
+            
           <!-- /menu footer buttons -->
         </div>
       </div>
@@ -382,8 +201,6 @@
                     </tbody>
 </table>
                           
-      
-                                        
       
 <br>
 
