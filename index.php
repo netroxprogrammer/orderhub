@@ -48,7 +48,7 @@ if(password==""){
 
 }
 if(Username=="jhon" && password=="jhon"){
-  window.location="index.html?Username"+Username;
+  window.location="main.php?Username"+Username;
 }
 }
 

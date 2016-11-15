@@ -1,124 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php  include_once 'header.php';  ?>
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <!-- Meta, title, CSS, favicons, etc. -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Order Hub </title>
-
-  <!-- Bootstrap core CSS -->
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link rel="stylesheet" href="dist/css/bootstrap-select.css">
-
-  
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <script src="dist/js/bootstrap-select.js"></script>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-
-  <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/animate.min.css" rel="stylesheet">
-
-  <!-- Custom styling plus plugins -->
-  <link href="css/custom.css" rel="stylesheet">
-  <link href="css/icheck/flat/green.css" rel="stylesheet">
-
-
-  <script src="js/jquery.min.js"></script>
-
-  <!--[if lt IE 9]>
-        <script src="../assets/js/ie8-responsive-file-warning.js"></script>
-        <![endif]-->
-
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
-</head>
-
-
-<body class="nav-md">
-
-  <div class="container body">
-
-
-    <div class="main_container">
-
-      <div class="col-md-3 left_col">
-        <div class="left_col scroll-view">
-
-          <div class="navbar nav_title" style="border: 0;">
-            <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>OrderHub</span></a>
-          </div>
-          <div class="clearfix"></div>
-
-          <!-- menu prile quick info -->
-         
-          <!-- /menu prile quick info -->
-
-          <br />
-
-          <!-- sidebar menu -->
-          <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
-
-            <div class="menu_section">
-              <h3>Status Filter</h3>
-              <ul class="nav side-menu">
-                  <li><a href="index.html">All Orders &nbsp;&nbsp;&nbsp;&nbsp; <i class="badge bg-green">21</i></a>
-                    </li>
-                
-                 <li><a href="index.html">Awaiting Payment&nbsp;&nbsp;&nbsp;&nbsp;<i class="badge bg-blue">1</i></a>
-                    </li>
-                  <li><a href="index.html">New Orders&nbsp;&nbsp;&nbsp;&nbsp;<i class="badge bg-orange">1</i></a>
-                    </li>
-                  <li><a href="index.html">Processing&nbsp;&nbsp;&nbsp;&nbsp;<i class="badge bg-yellow">1</i></a>
-                    </li>
-                  <li><a href="index.html">Dispatched&nbsp;&nbsp;&nbsp;&nbsp;<i class="badge bg-white">1</i></a>
-                    </li>
-                      <li><a href="index.html">Cancelled&nbsp;&nbsp;&nbsp;&nbsp;<i class="badge bg-red">1</i></a>
-                    </li>
-                <li><a><i class="fa fa-building">
-                </i> Saved Filters
-                 <span class="fa fa-chevron-down"></span></a>
-                  <ul class="nav child_menu" style="display: none">
-                    <li><a href="index.html">No Saved filters</a>
-                    </li>
-                   
-                  </ul>
-                </li>
-                <li><a><i class="fa fa-building">
-                </i> Batches
-                 <span class="fa fa-chevron-down"></span></a>
-                  <ul class="nav child_menu" style="display: none">
-                    <li><a href="index.html">No active batches</a>
-                    </li>
-                   
-                  </ul>
-                </li>
-                
-              </ul>
-            </div>
-            
-          </div>
-          <!-- /sidebar menu -->
-
-          <!-- /menu footer buttons -->
-          
-            
-          <!-- /menu footer buttons -->
-        </div>
-      </div>
-
-      <!-- top navigation -->
-      <div class="top_nav">
+ <div class="top_nav">
 
        
       </div>
@@ -148,7 +30,7 @@
                           <div>
                           </div>
                          
-                         
+                            <h3>Awaiting Payment</h3> 
                             <table class="table table-striped responsive-utilities jambo_table bulk_action">
                      <tbody>
                       <tr class="success">
