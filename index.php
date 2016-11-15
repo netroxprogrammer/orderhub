@@ -35,24 +35,7 @@
         <![endif]-->
 
 </head>
-<script type="text/javascript">
-function login(){
-var  Username = document.getElementById("Username").value;
-var password = document.getElementById("Password").value;
-if(Username==""){
 
-document.getElementById("Username").value="Please Enter Email";
-
-}
-if(password==""){
-
-}
-if(Username=="jhon" && password=="jhon"){
-  window.location="main.php?Username"+Username;
-}
-}
-
-</script>
 <body style="background:#53B9F7;">
 
   <div class="">
@@ -60,23 +43,52 @@ if(Username=="jhon" && password=="jhon"){
     <a class="hiddenanchor" id="tologin"></a>
 
     <div id="wrapper">
-      
+                                            
         <section class="login_content">
-         
+          <div class="x_content bs-example-popovers">
+
+                <script type="text/javascript">
+
+function login(){
+
+var  Username = document.getElementById("Username").value;
+var password = document.getElementById("Password").value;
+
+if(Username=="jhon" && password=="jhon"){
+  window.location="main.php?Username"+Username;
+}
+else{
+  document.getElementById("err").style.display = 'block';  
+  document.getElementById("error").innerHTML="User Not Found"; 
+}
+}
+
+</script>
+                
+              </div>
             <h1><font color="white"><i class="fa fa-paw">&nbsp;&nbsp;&nbsp;OrderHub</font></i></h1>
+           
+<div class="alert alert-danger alert-dismissible fade in" style="display: none;" id="err"  role="alert">
+                  <button type="button" class="close"  data-dismiss="alert"  aria-label="Close"><span aria-hidden="true"></span>
+                  </button>
+                  <strong id="error"></strong> 
+                </div>
+
+
            <div class="input-group">
                <input type="email" id="Username" class="form-control"  required placeholder="Email"/>
                <span class="input-group-addon">
                <i class="fa fa-envelope"></i>
                </span>
                          </div>
-           <font color="red"> <p id="email_error"></p></font>
+           <font color="red"> <p id="name"></p></font>
             <div class="input-group">
                <input type="password" id="Password" placeholder="Password" class="form-control" required/>
                <span class="input-group-addon">
                <i class="fa fa-key"></i>
                </span>
           </div>
+           <font color="red"> <p id="pass"></p></font>
             <div>
               <br>
               <button class="btn btn-success btn-block submit " onclick="login()"> Login</button>
@@ -93,6 +105,21 @@ if(Username=="jhon" && password=="jhon"){
       
     </div>
   </div>
+<script src="js/bootstrap.min.js"></script>
+
+  <!-- bootstrap progress js -->
+  <script src="js/progressbar/bootstrap-progressbar.min.js"></script>
+  <script src="js/nicescroll/jquery.nicescroll.min.js"></script>
+  <!-- icheck -->
+  <script src="js/icheck/icheck.min.js"></script>
+
+  <script src="js/custom.js"></script>
+  <!-- pace -->
+  <script src="js/pace/pace.min.js"></script>
+  <!-- PNotify -->
+  <script type="text/javascript" src="js/notify/pnotify.core.js"></script>
+  <script type="text/javascript" src="js/notify/pnotify.buttons.js"></script>
+  <script type="text/javascript" src="js/notify/pnotify.nonblock.js"></script>
 
 </body>
 
